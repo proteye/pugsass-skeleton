@@ -1,0 +1,23 @@
+{
+  "name": "pugsass-skeleton",
+  "version": "1.0.0",
+  "description": "A boilerplate for building web templates or sites using Pug and Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/proteye/pugsass-skeleton.git"
+  },
+  "keywords": [
+    "pug",
+    "sass"
+  ],
+  "author": "Ramil Zaynetdinov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/proteye/pugsass-skeleton/issues"
+  },
+  "homepage": "https://github.com/proteye/pugsass-skeleton#readme"
+}
