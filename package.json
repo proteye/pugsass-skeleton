@@ -1,10 +1,13 @@
 {
   "name": "pugsass-skeleton",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A boilerplate for building web templates or sites using Pug and Sass",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "start": "gulp --debug",
+    "build": "gulp build",
+    "production": "cross-env NODE_ENV=production npm run build",
+    "clean": "gulp clean"
   },
   "repository": {
     "type": "git",
@@ -12,12 +15,58 @@
   },
   "keywords": [
     "pug",
-    "sass"
+    "sass",
+    "frontend",
+    "template",
+    "boilerplate",
+    "gulp"
   ],
   "author": "Ramil Zaynetdinov",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/proteye/pugsass-skeleton/issues"
   },
-  "homepage": "https://github.com/proteye/pugsass-skeleton#readme"
+  "homepage": "https://github.com/proteye/pugsass-skeleton#readme",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "babel-runtime": "^6.25.0",
+    "bemto.pug": "^2.1.0",
+    "browser-sync": "^2.18.13",
+    "cross-env": "^5.0.4",
+    "debuga": "^1.0.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-changed": "^3.1.0",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-filter": "^5.0.1",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-if": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-plumber-error-handler": "^1.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-pug-inheritance": "^0.2.1",
+    "gulp-pug-lint": "^0.1.6",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-glob-import": "^0.1.0",
+    "gulp-sass-lint": "^1.3.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-static-hash": "^0.1.4",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "happypack": "^4.0.0-beta.2",
+    "jquery": "^3.2.1",
+    "json-loader": "^0.5.7",
+    "pug-lint": "^2.4.0",
+    "require-dir": "^0.3.2",
+    "run-sequence": "^2.1.0",
+    "sass-lint": "^1.10.2",
+    "smart-grid": "^1.1.0",
+    "webpack": "^3.4.1",
+    "webpack-stats-logger": "^1.0.1"
+  }
 }
