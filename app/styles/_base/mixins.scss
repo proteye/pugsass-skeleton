@@ -13,7 +13,7 @@
 }
 
 // Set element size
-@mixin size($width, $height: $width) {
+@mixin elm-size($width, $height: $width) {
   width: $width;
   height: $height;
 }
