@@ -7,8 +7,14 @@
     "start": "gulp --debug",
     "build": "gulp build",
     "production": "cross-env NODE_ENV=production npm run build",
-    "clean": "gulp clean"
+    "clean": "gulp clean",
+    "sasslint": "./node_modules/.bin/sass-lint",
+    "puglint": "./node_modules/.bin/pug-lint ./app"
   },
+  "prepush": [
+    "sasslint",
+    "puglint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/proteye/pugsass-skeleton.git"
@@ -37,7 +43,7 @@
     "babel-runtime": "^6.25.0",
     "bemto.pug": "^2.1.0",
     "browser-sync": "^2.18.13",
-    "cross-env": "^5.0.4",
+    "cross-env": "^5.0.5",
     "debuga": "^1.0.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
@@ -61,12 +67,13 @@
     "happypack": "^4.0.0-beta.2",
     "jquery": "^3.2.1",
     "json-loader": "^0.5.7",
+    "pre-push": "^0.1.1",
     "pug-lint": "^2.4.0",
     "require-dir": "^0.3.2",
     "run-sequence": "^2.1.0",
     "sass-lint": "^1.10.2",
     "smart-grid": "^1.1.0",
-    "webpack": "^3.4.1",
+    "webpack": "^3.5.1",
     "webpack-stats-logger": "^1.0.1"
   }
 }

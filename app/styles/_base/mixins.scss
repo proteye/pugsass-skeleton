@@ -1,5 +1,5 @@
 // Clear the float on any element.
-@mixin clearfix() {
+@mixin clearfix {
   &::after {
     display: table;
     clear: both;
@@ -8,7 +8,7 @@
 }
 
 // Fix no working `-webkit-text-size-adjust: 100%;` in Android.
-@mixin fix-text-size-adjust() {
+@mixin fix-text-size-adjust {
   background-image: linear-gradient(transparent, transparent);
 }
 
@@ -20,8 +20,8 @@
 
 // Set margin on left & right
 @mixin margin-x($margin) {
-  margin-left: $margin;
   margin-right: $margin;
+  margin-left: $margin;
 }
 
 // Set margin on top & bottom
@@ -32,8 +32,8 @@
 
 // Set pading on left & right
 @mixin padding-x($padding) {
-  padding-left: $padding;
   padding-right: $padding;
+  padding-left: $padding;
 }
 
 // Set padding on top & bottom
@@ -43,10 +43,10 @@
 }
 
 // Set one static retina image
-@mixin retinaBackground($image, $ext: 'png') {
-	background-image: url('../images/' + $image + '.' + $ext);
+@mixin retina-background($image, $ext: 'png') {
+  background-image: url('../images/' + $image + '.' + $ext);
 
-	@media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-		background-image: url('../images/' + $image + '@2x.' + $ext);
-	}
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    background-image: url('../images/' + $image + '@2x.' + $ext);
+  }
 }
